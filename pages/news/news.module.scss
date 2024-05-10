@@ -1,0 +1,47 @@
+@import '/src/assets/styles/abstracts/index.scss';
+
+.innovations {
+    &-list {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include breakpoint("1024px", "min") {
+            width: rem(1032);
+        }
+        li {
+            & div:first-child {
+                width: 100%;
+                @include breakpoint("768px", "min") {
+                    padding: rem(24) !important;
+                    width: calc((1032px - 24px * 2) / 3);
+                    height: auto;
+                }
+            }
+
+            .list-item:nth-child(3n) {
+                margin-right: 0;
+                /* Remove margin-right for every third item */
+            }
+
+            h6 {
+                font-weight: 600;
+                margin: rem(0);
+            }
+
+            p {
+                font-size: rem(14);
+                color: $text-color;
+                line-height: rem(24);
+                font-family: 'IBM Plex Sans Regular';
+                margin: rem(8) 0;
+            }
+
+            span {
+                font-size: rem(12);
+                font-family: 'IBM Plex Sans Regular';
+                color: $input;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import '../../src/assets/styles/abstracts/index.scss';
+
+.not-found {
+    &__logo {
+       color: $input;
+       font-size: rem(72);
+       font-family: 'Space Grotesk Bold';
+       line-height: rem(92);
+    }
+}

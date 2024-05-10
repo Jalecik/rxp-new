@@ -1,0 +1,37 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.advantages {
+    @include breakpoint("768px", "min") {
+        margin-top: rem(80);
+        margin-bottom: rem(101);
+    }
+    &-cards {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        li {
+            @include breakpoint("768px", "max") {
+                padding: rem(0);
+                margin-bottom: rem(24);
+            }
+
+            h6 {
+                font-family: 'Space Grotesk Bold';
+                font-size: rem(20);
+                margin: rem(24) auto
+            }
+
+            p {
+                opacity: 0.7;
+                padding-right: rem(70);
+            }
+
+            // &:not(:last-child) {
+            //     margin-right: rem(36);
+            // }
+        }
+
+    }
+}

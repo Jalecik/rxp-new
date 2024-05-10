@@ -1,0 +1,57 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.steps {
+    ul {
+        @include breakpoint('1024px', 'max') {
+            margin-left: rem(53);
+        }
+        @include breakpoint('1024px', 'min') {
+            margin-left: rem(64);
+        }
+        @include breakpoint('2560px', 'min') {
+            margin-left: rem(80);
+        }
+    }
+    li {
+        display: flex;
+        align-items: center;
+
+        font-size: rem(16);
+        font-family: 'IBM Plex Sans Medium';
+        margin-bottom: rem(32);
+    }
+
+    &-list {
+        color: $dark-green;
+        span {
+            background-color: $dark-green;
+            border-radius: 50%;
+            width: rem(32);
+            height: rem(32);
+            color: $white;
+            font-size: rem(16);
+            font-family: 'Space Grotesk Bold';
+            padding: 6px 10px;
+        }
+
+        &_active {
+            color: $main !important;
+            svg {
+                display: block;
+                margin: auto;
+                height: 32px;
+            }
+
+            span {
+                display: block;
+                background: $main;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                color: $white;
+                padding: rem(1) rem(6);
+                
+            }
+        }
+    }
+}

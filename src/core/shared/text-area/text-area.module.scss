@@ -1,0 +1,17 @@
+@import "../../../assets/styles/abstracts/index.scss";
+
+.input {
+  border: rem(1.5) solid $input;
+  padding: rem(12);
+  align-items: center;
+  border-radius: $border-radius;
+  padding-top: rem(17) !important;
+  font-size: rem(16);
+  color: $main;
+  &::placeholder {
+    font-size: rem(16);
+    font-family: 'IBM Plex Sans';
+    color: $input-text;
+    height: rem(56);
+  }
+}

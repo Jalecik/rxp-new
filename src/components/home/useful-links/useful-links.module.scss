@@ -1,0 +1,43 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.links {
+    @include breakpoint("768px", "min") {
+        margin-top: rem(96);
+    }
+    &-card {
+        border: rem(1) solid $gray;
+        &_inner {
+            padding: rem(25) rem(58);
+            align-items: center;
+            height: rem(127);
+
+            @include breakpoint("768px", "max") {
+                width: rem(273);
+            }
+            @include breakpoint("768px", "min") {
+                width: rem(328);
+            }
+
+            &:not(:last-child) {
+                border-bottom: rem(1) solid $gray;
+            }
+            span {
+                font-size: rem(20);
+                color: $bold-text;
+                font-family: 'IBM Plex Sans';
+                font-weight: 700;
+                margin-left: rem(12)
+            }
+        }
+    }
+}
+
+
+// .links-card {
+//     margin-left: rem(20) !important; /* Adjust the margin as needed */
+//   }
+  
+//   .links-card:first-of-type {
+//     margin-left: 0;
+//     background-color: red;
+//   }

@@ -1,0 +1,54 @@
+@import '../../../../src/assets/styles/abstracts/index.scss';
+
+.about {
+    &-info {
+        @include breakpoint("768px", "min") {
+            margin-top: rem(40);
+        }
+        &__content {
+            p {
+                line-height: rem(24);
+            }
+            @include breakpoint("768px", "max") {
+                margin-top: rem(24);
+             }
+            @include breakpoint("1024px", "min") {
+             max-width: rem(568);
+            //  margin-top: rem(32);
+            }
+        }
+
+        &__img {
+            background-color: $light-gray;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: $border-radius;
+            margin: auto;
+
+            @include breakpoint("768px", "max") {
+               padding: rem(108) rem(48);
+            }
+            @include breakpoint("768px", "min") {
+                padding: rem(0) rem(20);
+             }
+ 
+
+            @include breakpoint("1024px", "min") {
+                width: rem(416);
+                height: rem(416);
+            }
+        
+            img {
+                max-height: 100%;
+                max-width: 100%;
+
+                
+            @include breakpoint("768px", "max") {
+                height: rem(135);
+             }
+            }
+        }
+    }
+}

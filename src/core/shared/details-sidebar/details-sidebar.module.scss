@@ -1,0 +1,53 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.detail {
+
+    &-title {
+        font-size: rem(20);
+        font-family: 'IBM Plex Sans Regular';
+        color: $main;
+    }
+    &-list {
+        margin: rem(32) 0;
+
+        li {
+            &:not(:first-child) {
+                padding-top: rem(16);
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid $gray;
+                padding-bottom: rem(16);
+            }
+    
+            img {
+                width: rem(24);
+                margin-right: rem(16);
+            }
+        }
+    }
+
+  
+
+    &_inner {
+        display: flex;
+        flex-direction: column;
+
+        h5 {
+            font-size: rem(16);
+            margin: rem(0);
+        }
+
+        span {
+            font-size: rem(12);
+            font-family: 'IBM Plex Sans Regular';
+            color: $input;
+        }
+    }
+    &_all {
+        display: flex;
+        align-items: center;
+        font-size: rem(16);
+        font-family: 'IBM Plex Sans Bold';
+        color: $blue;
+    }
+}

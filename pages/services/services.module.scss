@@ -1,0 +1,11 @@
+@import '../../src/assets/styles/abstracts/index.scss';
+
+.services-list{
+    width: 100%;
+    @include breakpoint("768px", "max") {
+        margin-left: rem(0);
+    }
+    @include breakpoint("768px", "min") {
+        padding: 0px;
+    }
+}

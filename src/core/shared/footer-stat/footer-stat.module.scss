@@ -1,0 +1,84 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+
+.footer {
+    &-stat_list {
+        @include breakpoint("768px", "max") {
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        @include breakpoint("768px", "min") {
+            flex-direction: row;
+            display: flex;
+        }
+
+        li {
+
+            // &:not(:first-child) {
+            //     margin-left: rem(24);
+            // }
+            @include breakpoint("768px", "max") {
+                justify-content: space-between;
+                margin-bottom: rem(26);
+                height: rem(26);
+            }
+        }
+    }
+
+    &_stat {
+        p {
+            font-size: rem(14);
+            color: $main;
+            line-height: rem(16);
+            text-align: right;
+            max-width: rem(105);
+        }
+
+        // &_count {
+        //     margin: auto;
+        // }
+
+        &_count span {
+            border: rem(1) solid $border-color;
+            border-radius: rem(4);
+            padding: rem(6) rem(6);
+            background-color: $white;
+            text-align: center;
+            margin-left: rem(2);
+            font-family: 'Space Grotesk Bold';
+            font-size: rem(20);
+        }
+    }
+}
+
+.stat-inner {
+    margin: auto;
+    display: flex;
+
+    @include breakpoint("768px", "max") {
+        width: 100%;
+    }
+
+    div {
+        margin: auto;
+    }
+
+    p {
+        @include breakpoint("1024px", "max") {
+            max-width: rem(130);
+        }
+
+        @include breakpoint("1024px", "min") {
+            max-width: rem(105);
+        }
+    }
+
+    &__about {
+        flex-direction: column-reverse;
+
+        p {
+            max-width: 100%
+        }
+    }
+}

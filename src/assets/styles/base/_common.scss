@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+h2{
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'IBM Plex Sans Bold';
+  color: $main;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: $scroll;
+  // border-radius: $border-radius;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: $border-radius;
+  background: $int_main;
+  height: 40px;
+}
+
+// * {
+//   
+// }

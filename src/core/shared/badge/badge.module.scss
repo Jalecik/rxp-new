@@ -1,0 +1,38 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.badge{
+    border-radius: rem(12);
+    height: rem(24);
+    margin: rem(0) rem(16);
+    display: flex;
+    align-items: center;
+    // @include breakpoint("768px", "min") {
+    //     padding-left: rem(13);
+    //     padding-right: rem(13);
+    // }
+    span {
+        color: $white !important;
+        font-size: rem(13) !important;
+        font-family: 'IBM Plex Sans Medium' !important;
+        margin-left: rem(0) !important;
+        padding: rem(3) rem(8) rem(4) rem(8) !important;
+
+        // @include breakpoint("1024px", "max") {
+        //   padding: rem(3) rem(8) !important;
+        // }
+        // @include breakpoint("1024px", "min") {
+        //     padding: rem(3) rem(8) !important;
+        //   }
+    }
+
+}
+.green {
+    background-color: $main-green;
+}
+
+.blue {
+    background-color: $badge;
+}
+.orange {
+    background-color: $orange;
+}

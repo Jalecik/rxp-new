@@ -1,0 +1,18 @@
+@import '../../../src/assets/styles/abstracts/index.scss';
+
+.services-detail{
+    display: flex;
+    width: 100%;
+    @include breakpoint("768px", "max") {
+        flex-direction: column-reverse;
+        margin-top: rem(24);
+    }
+    @include breakpoint("768px", "min") {
+       flex-direction: row;
+       margin-top: rem(13);
+    }
+    @include breakpoint("1200px", "min") {
+        padding-right: rem(60);
+     }
+}
+

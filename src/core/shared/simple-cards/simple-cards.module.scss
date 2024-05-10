@@ -1,0 +1,23 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.simple-cards {
+    border: rem(1) solid $gray;
+    border-radius: $card-border;
+    // height: rem(270);
+    // width: rem(446);
+    height: rem(200);
+    // width: rem(328);
+    &_inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+     h6 {
+        font-family: 'IBM Plex Sans Medium';
+        font-size: rem(18);
+        font-weight: 500;
+        margin: rem(33) rem(0) rem(0) rem(0);
+     }
+}

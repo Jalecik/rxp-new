@@ -1,0 +1,180 @@
+$header-navbar-bg-color: #0e1726;
+
+//common
+$main: #162753;
+$bold-text: #2E3E68;
+$text-color: #4E5E87;
+$gray: #D9DCEE;
+$disabled: rgba(22, 39, 83, 0.40);
+$gray-hover: #cccfe5;
+$list-hover: #f7f6fc;
+$label:  rgba(22, 39, 83, 0.60);
+$input: #ABB4CB;
+$input-text: #7A86A9;
+$footer-bg: #EBEEFA;
+$light-gray: #F0F3FB;
+$border-color: #ABB4CB;
+$orange: #D16D11;
+$blur-main: #8789a5;
+$main-green: #30B42D;
+$main-green-hover: #2A9C27;
+$dark-green: #039300;
+$blue: #0085FF;
+$dark-blue: #0071DA;
+$badge: #0084FF;
+$checkbox:#099A71;
+$green-shadow-color: rgba(0, 176, 78, 0.28);
+$bg: #f1f2f3;
+$light: #fafafa;
+$text: #3b3f5c;
+$border: #d7e0ea;
+$icon: #506690;
+$black: #000;
+$white: #fff;
+$borderColor:#DEDEDE;
+$pricing_card:#a3a4ba;
+$pricing_text:#8e8fa7;
+$circle:#A0A3BD;
+$divider:#e8e8ee;
+$steps:#E1E1E6;
+$partnerBorder:rgba(71, 73, 117, 0.2);
+$table-border: #dadbe3;
+$loading:rgb(70, 197, 6);
+$accBorder:#D4D4E3;
+$contentBorder: #f5f5f8;
+$borderBottom:#c7c8d5;
+$list-border: #D9D9D9;
+//tab
+$tab: #805dca;
+$tab-border-bottom: lightgrey;
+
+//button
+$button-text-color: #fff;
+$primary-button-color: #4361ee;
+$info-button-color: #2196f3;
+$success-button-color: #1abc9c;
+$warning-button-color: #e2a03f;
+$danger-button-color: #e7515a;
+$dark-button-color: #3b3f5c;
+$button-color: #f1f2f3;
+$main-button-text-color: #3b3f5c;
+$secondary-button-color: #805dca;
+
+//inputs
+$input-border-color: #bfc9d4;
+$input-border-focus-color: #4361ee;
+$input-text-color: #3b3f5c;
+$input-focus-shadow-color: #c2d5ff;
+$input-dark: #51536547;
+
+//pagination
+$pagination-color: #2b455f;
+
+//components
+$toast-default-color: #3b3f5c;
+$login-border-color: #e0e6ed;
+$label-color: #3b3f5c;
+$forgot-password-color: #888ea8;
+$header-border: #ebedf2;
+
+//left-menu
+$left-menu-hover: #bfc9d4;
+$breadcrumbs-item-active: #3b3f5c;
+$breadcrumbs-item: #888ea8;
+$validation-error-color: red;
+$table-header-bg-color: #e7f7ff;
+$gradient-blue: #4361ee;
+$gradient-lilac: #805dca;
+$shadow-color: #e0e6ed;
+$btn-border-color: #d3d3d3;
+
+//alert
+
+$alert-primary: #eaf1ff;
+$alert-text-primary: #4361ee;
+$alert-warning: #fff9ed;
+$alert-text-warning: #e2a03f;
+$alert-success: #ddf5f0;
+$alert-text-success: #1abc9c;
+$alert-info: #e7f7ff;
+$alert-text-info: #2196f3;
+$alert-dark: #e3e4eb;
+$alert-text-dark: #3b3f5c;
+$alert-danger: #fff5f5;
+$alert-text-danger: #e7515a;
+
+//modal
+$modal-color: #888ea8;
+$modal-border: #e0e6ed;
+$modal-title: #3b3f5c;
+
+//auth panel
+$auth-subtitle-text: #888ea8;
+
+//dropdown
+$dropdown-text-color-hover: #2196f3;
+
+//loading
+$loadingBackdropBgColor: rgba(0, 0, 0, 0.3);
+
+// INTRANET BASIC COLORS
+
+$int_main: #2c3341;
+$int_secondary: #5abbb3;
+$int_red: #d97070;
+$int_yellow: #f3bb60;
+$int_gray: #9599a0;
+$int_yellow_transparent : rgba(243, 187, 96, 0.1);
+$int_gray_circle: #E6E6E6;
+
+$gray_0: #fff;
+$gray_1: #fefefe;
+$gray_2: #fdfdfd;
+$gray_3: #fcfcfc;
+$gray_4: #fbfbfb;
+$gray_5: #fafafa;
+$gray_6: #f9f9f9;
+$gray_7: #f8f8f8;
+$gray_8: #f7f7f7;
+$gray_9: #f5f5f5;
+$gray_10: #f4f4f4;
+$gray_11: #f3f3f3;
+$gray_12: #f2f2f2;
+$gray_13: #f1f1f1;
+$gray_14: #ebebeb;
+$gray_15: #eaebec;
+$gray_16: #e5e5e5;
+$gray_17: #d8d8d8;
+$gray_18: #999999;
+$gray_19: #9599a0;
+$bg_gray: #f3f4f6;
+
+$secondary_bg: #5abbb31a;
+$btn_bg: #f9f9f9;
+$input_holder: #f8f8f81a;
+$sidebar_bg: #f8f8f8;
+$bg: #fbfbfb;
+$light_bg: #fbfbfb;
+$shorts_bg: #f5f5f5;
+$dark_bg: #f3f3f3;
+$border: #ebebeb;
+$menu_hover: #ebebeb;
+$line: #eaebec;
+$scroll: #e5e5e5;
+$dropZone-border: #5ABBB3;
+$dander-text-color: #D97070;
+
+$sub_menu_color:0px 5px 6px rgba(0, 0, 0, 0.04), 0px 3px 16px rgba(0, 0, 0, 0.04);
+$box_shadow_sm: 0px 5px 10px rgba(0, 0, 0, 0.07);
+
+// employee add
+$not-aviable-bg: #F0E6E6;
+$is-aviable-bg: #E4EDED;
+
+// STRUCTURE
+$page_head_bg : rgba(44, 51, 65, 0.8);
+$toggle_switch_bg : #f0f0f0;
+
+// PAGINATION
+$pagination_active_bg : #f0f0f0;
+

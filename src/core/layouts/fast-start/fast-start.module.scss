@@ -1,0 +1,33 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.fast-start {
+    min-height: 100vh;
+
+    @include breakpoint("768px", "max") {
+       background-color: $white;
+    }
+    @include breakpoint("768px", "min") {
+        background: linear-gradient(to right, #fff 64%, #F0F3FB 40%);
+     }
+     @include breakpoint("1024px", "min") {
+        background: linear-gradient(to right, #fff  62%, #F0F3FB 39%);
+     }
+     @include breakpoint("1440px", "min") {
+        background: linear-gradient(to right, #fff  60%, #F0F3FB 42%);
+     }
+     @include breakpoint("1800px", "min") {
+      background: linear-gradient(to right, #fff  59%, #F0F3FB 42%);
+   }
+}
+
+.close {
+   svg {
+      position: absolute;
+      @include breakpoint("768px", "max") {
+         right: rem(10);
+       }
+      @include breakpoint("768px", "min") {
+        right: rem(33);
+      }
+    }
+}

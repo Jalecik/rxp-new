@@ -1,0 +1,67 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+
+.hamburger-menu {
+  position: relative;
+  background-color: lightblue;
+  padding: 10px;
+  transition: width 0.3s ease;
+
+  &__logo {
+    svg {
+      width: rem(208);
+      height: rem(24);
+    }
+  }
+  nav {
+    margin-top: rem(23);
+    ul {
+      li {
+        color: $main;
+        font-size: rem(14);
+        padding: rem(16) rem(12);
+      }
+    }
+  }
+}
+
+.hamburger-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: rem(100);
+  right: -20px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    right: rem(-6);
+    bottom: rem(6);
+    position: relative;
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: $footer-bg;
+  transition: transform 0.3s ease, width 0.3s ease;
+  /* Add width transition */
+  min-height: 100vh;
+  width: rem(60);
+
+}
+
+.menu.open {
+  transform: translateX(0);
+  width: rem(280);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}

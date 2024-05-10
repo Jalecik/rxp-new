@@ -1,0 +1,16 @@
+@import '../../src/assets/styles/abstracts/index.scss';
+
+.not-found {
+    margin: auto;
+    display: block;
+    max-width: rem(504);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__logo {
+       color: $input;
+       font-size: rem(72);
+       font-family: 'Space Grotesk Bold';
+       line-height: rem(92);
+    }
+}

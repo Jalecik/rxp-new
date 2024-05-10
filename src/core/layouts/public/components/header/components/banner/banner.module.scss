@@ -1,0 +1,203 @@
+@import "../../../../../../../assets/styles/abstracts/index.scss";
+
+
+.banner {
+    background: url("../../../../../../../assets/images/header/header.png");
+    position: relative;
+
+    &-content {
+        @include breakpoint("768px", "max") {
+            padding-top: rem(24);
+            padding-bottom: rem(24);
+            margin: auto;
+        }
+
+    }
+
+    @include breakpoint("768px", "min") {
+        height: rem(400);
+        padding: rem(80) rem(0);
+    }
+    @include breakpoint("1250px", "min") {
+        height: rem(500);
+    }
+}
+
+.search {
+    &-content {
+        position: relative;
+    }
+
+    &-result {
+        position: absolute;
+    }
+
+    input {
+        height: rem(64);
+        border-radius: $border-radius;
+        border: rem(1) solid $border-color;
+        border-radius: rem(12);
+        border-start-end-radius: rem(12) !important;
+        border-end-end-radius: rem(12) !important;
+        font-size: rem(16);
+        box-shadow: none;
+        color: $main;
+
+        &::placeholder {
+            color: $main;
+            opacity: 0.5;
+            justify-content: center;
+        }
+    }
+
+    &_btn {
+        background-color: $gray;
+        height: rem(56);
+        color: $main;
+        border-radius: $border-radius;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 4px;
+        right: 4px;
+        z-index: 1;
+        transition: background-color 0.3s ease-in-out;
+
+
+        @include breakpoint("768px", "max") {
+            padding: rem(10) rem(16);
+        }
+
+        @include breakpoint("768px", "min") {
+            width: rem(121);
+            padding: rem(10) rem(16) rem(12) rem(8);
+        }
+
+        span {
+            font-family: 'IBM Plex Sans Bold';
+            font-size: rem(16);
+        }
+
+        &:hover {
+            background: $gray-hover !important;
+            border-color: $gray-hover !important;
+
+            span {
+                color: $main;
+            }
+        }
+    }
+
+    &-result {
+        border-radius: $card-border;
+        z-index: 1000000;
+
+        @include breakpoint("1024px", "min") {
+            width: rem(480);
+        }
+
+        &_card__inner {
+            padding: rem(8);
+        }
+
+        &_item {
+            display: flex;
+            padding: rem(16) rem(4);
+        }
+
+        span {
+            font-size: rem(14);
+            color: $main;
+            line-height: rem(18);
+            font-family: 'IBM Plex Sans Extra Bold';
+            font-size: rem(16);
+            margin-left: rem(5);
+
+        }
+    }
+
+}
+
+.list-start {
+    li {
+        background-color: $gray;
+        height: rem(36);
+        border-radius: rem(24);
+        display: flex;
+        align-items: center;
+        color: $main;
+        margin-top: rem(25);
+        transition: background-color 0.3s ease-in-out;
+        &:not(:first-child):hover {
+            background: $gray-hover !important;
+            border-color: $gray-hover !important;
+        }
+        &:not(:first-child) {
+            margin-left: rem(10);
+        }
+        a {
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        span {
+            font-family: 'IBM Plex Sans';
+            font-size: rem(14);
+        }
+
+        @include breakpoint("768px", "max") {
+            flex: 1 0 43%;
+        }
+
+        @include breakpoint("768px", "min") {
+            padding: rem(0) rem(20) rem(0) rem(10);
+        }
+
+        &:first-child {
+            background-color: $main-green;
+            &:hover {
+                background: $main-green-hover !important;
+                border-color: $main-green-hover !important;
+            }
+            span {
+                color: $white;
+                font-family: 'IBM Plex Sans Bold';
+            }
+        }
+
+        &:not(:first-child) {
+            margin-bottom: rem(5);
+        }
+
+        span {
+            font-size: rem(14);
+            margin-left: rem(5);
+        }
+    }
+}
+
+.info-list {
+    @include breakpoint("768px", "max") {
+        margin-top: rem(16);
+    }
+
+    @include breakpoint("768px", "min") {
+        position: relative;
+        top: 59%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    @include breakpoint("1024px", "min") {
+        padding: rem(0) rem(58);
+    }
+
+    li {
+        @include breakpoint("768px", "max") {
+            margin-bottom: rem(32);
+            padding: rem(0);
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import "../../../assets/styles/abstracts/index.scss";
+
+.custom-select {
+    height: rem(56);
+    .ant-select-selector {
+        border: none;
+        padding: rem(0);
+    }
+
+    :hover {
+        border-color: $input ;
+    }
+}
+
+.custom-select {
+    border: rem(1.5) solid $input;
+    align-items: center;
+    border-radius: $border-radius;
+}
+.float-label {
+    position: relative;
+    margin-bottom: 12px;
+
+    .label {
+        font-size: rem(12);
+        font-family: 'IBM Plex Sans Regular';
+        color: $input-text;
+        left: 12px;
+        top: 10px;
+
+
+        transition: 0.2s ease all;
+        position: absolute;
+
+        &-float {
+            top: 6px;
+            font-size: 10px;
+        }
+    }
+}

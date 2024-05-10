@@ -1,0 +1,19 @@
+@import '../../src/assets/styles/abstracts/index.scss';
+
+.privacy {
+    max-width: rem(656);
+    margin-top: rem(40);
+    margin-bottom: rem(140);
+    p {
+        margin-bottom: rem(24);
+        line-height: rem(24);
+        // margin: rem(24) 0;
+    }
+    ul {
+        list-style-type: disc;
+        margin: rem(24) 0 rem(24) rem(24);
+        li {
+            margin: rem(12) 0;
+        }
+    }
+}

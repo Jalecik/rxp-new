@@ -1,0 +1,10 @@
+@import '../../../src/assets/styles/abstracts/index.scss';
+
+.support-detail{
+    @include breakpoint("768px", "max") {
+       
+    }
+    @include breakpoint("768px", "min") {
+       margin-top: rem(-60);
+    }
+}

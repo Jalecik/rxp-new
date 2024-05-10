@@ -1,0 +1,25 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.float-label {
+    position: relative;
+  }
+  
+  .label {
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 12px;
+    top: rem(17.5);
+    transition: 0.2s ease all;
+  
+    font-size: rem(16);
+    font-family: 'IBM Plex Sans';
+    color: $input-text;
+    height: rem(56);
+  }
+  
+  .label-float {
+    top: rem(8);
+    font-size: rem(12);
+  }
+  

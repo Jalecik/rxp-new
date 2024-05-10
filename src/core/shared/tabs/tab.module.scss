@@ -1,0 +1,45 @@
+@import "assets/styles/abstracts";
+
+.tabs {
+  &-inner {
+    border-radius: rem(16);
+    border: rem(1) solid $light-gray;
+    background-color: $light-gray;
+  }
+
+  &-list {
+    padding: rem(8);
+  }
+
+  &-content {
+    @include breakpoint("768px", "max") {
+     padding: rem(0);
+    }
+    @include breakpoint("768px", "min") {
+    padding-left: rem(34);
+    }
+}
+
+  li {
+    padding: rem(16);
+    transition: background-color 0.5s ease;
+    border-radius: $border-radius;
+    margin: rem(4) auto;
+
+    &:hover, &.active {
+      background-color: $white;
+      color: $main;
+    }
+  }
+  &-count {
+    color: $label;
+    font-size: rem(12);
+  }
+  &-header {
+    color: $main;
+    font-size: rem(16);
+    font-family: 'IBM Plex Sans Medium';
+    font-weight: 500;
+    line-height: rem(24);
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../src/assets/styles/abstracts/index.scss';
+
+.about {
+    &-stat {
+        background-color: $footer-bg;
+        @include breakpoint("768px", "max") {
+            margin-top: rem(40);
+        }
+        @include breakpoint("768px", "min") {
+            margin: rem(80) auto;
+        }
+        &__elem {
+            flex-direction: column-reverse;
+            p {
+                padding-top: rem(16);
+            }
+            @include breakpoint("768px", "max") {
+                height: auto !important;
+            }
+        }
+    }
+}
+.stat-list {
+    height: rem(79);
+}

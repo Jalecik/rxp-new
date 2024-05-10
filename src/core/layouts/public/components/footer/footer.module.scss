@@ -1,0 +1,115 @@
+@import '../../../../../assets/styles/abstracts/index.scss';
+
+
+.footer {
+    background-color: $footer-bg;
+    padding: rem(20) rem(0);
+
+    &-call {
+        @include breakpoint("768px", "max") {
+            justify-content: center;
+        }
+
+        span {
+            color: $dark-green;
+            font-family: 'Space Grotesk Bold';
+            font-size: rem(24);
+        }
+
+        p {
+            font-size: rem(14);
+            color: $dark-green;
+            line-height: rem(16);
+        }
+    }
+
+    &-list {
+        margin: auto;
+        padding: rem(26) rem(0);
+
+        @include breakpoint("768px", "max") {
+            padding-top: rem(32);
+            padding-bottom: rem(22);
+        }
+
+        @include breakpoint("768px", "min") {
+            padding: rem(26) rem(0);
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            @include breakpoint("768px", "max") {
+                flex-direction: column;
+            }
+
+            li {
+                margin-left: rem(15);
+
+                @include breakpoint("768px", "max") {
+                    margin-bottom: rem(16);
+                }
+
+                a {
+                    font-family: 'IBM Plex Sans Medium';
+                    font-size: rem(16);
+                    color: $main;
+                    line-height: rem(20);
+                }
+            }
+        }
+    }
+
+    &-sub {
+
+        p,
+        ul li a {
+            font-size: rem(12);
+            color: $text-color;
+            font-family: 'IBM Plex Sans Regular';
+        }
+
+        ul {
+            @include breakpoint("768px", "max") {
+                justify-content: center;
+                margin-top: rem(24);
+            }
+
+            @include breakpoint("768px", "min") {
+                justify-content: end;
+            }
+
+            li {
+                text-decoration: underline;
+                margin-left: rem(8);
+            }
+        }
+    }
+
+    &-feedback {
+        align-items: center;
+        position: absolute;
+        right: rem(40);
+        background-color: $white;
+        border-radius: $border-radius;
+        border-color: transparent !important;
+
+        span {
+            color: $orange;
+            font-family: 'IBM Plex Sans Bold';
+            font-size: rem(16);
+        }
+    }
+}
+.stat-list {
+    p {
+        @include breakpoint("768px", "min") {
+           max-width: rem(120);
+           text-align: right;
+           margin-right: rem(16);
+        }
+    }
+}

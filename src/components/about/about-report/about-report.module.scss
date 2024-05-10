@@ -1,0 +1,50 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.about-report {
+  &__list {
+    li {
+      @include breakpoint("768px", "min") {
+        padding-left: rem(10);
+        padding-right: rem(17);
+      }
+
+      &>div:first-child {
+        padding: rem(24) !important;
+        position: relative;
+      }
+
+      h6 {
+        font-weight: 600;
+        margin: rem(0);
+      }
+
+      p {
+        font-size: rem(14);
+        color: $text-color;
+        line-height: rem(24);
+        font-family: 'IBM Plex Sans Regular';
+        margin: rem(8) 0;
+      }
+
+      span {
+        font-size: rem(14);
+        font-family: 'IBM Plex Sans Medium';
+        color: $blue;
+        margin-left: rem(8);
+        line-height: rem(21);
+      }
+
+      a {
+        position: absolute;
+        bottom: rem(11);
+      }
+      // a {
+      //   @include breakpoint("768px", "min") {
+      //     padding: 0px;
+      //     position: relative;
+      //     bottom: 6px;
+      //   }
+      // }
+    }
+  }
+}

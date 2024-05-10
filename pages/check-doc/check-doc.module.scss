@@ -1,0 +1,67 @@
+@import '../../src/assets/styles/abstracts/index.scss';
+
+
+.doc {
+    @include breakpoint("768px", "min") {
+        padding: rem(40) rem(0) rem(100) rem(0);
+    }
+    &-info {
+        position: relative;
+        &__footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 0;
+            span {
+                color: $blue;
+                 font-family: 'IBM Plex Sans Bold';
+                margin-left: rem(8);
+            } 
+            
+        }
+    }
+
+    &-title {
+        display: flex;
+        justify-content: space-between; 
+        ul li {
+            padding: rem(8);
+            &:last-child {
+                margin-left: rem(8);
+            }
+        }
+    }
+
+    &-card {
+        &__info {
+            ul {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: rem(16);
+
+                    span {
+                        color: $input-text;
+                    }
+
+                    &:last-child {
+                        p {
+                            background: linear-gradient(87deg, #1468B6 0%, #00C2FF 100%);
+                            border-radius: rem(16);
+                            color: $white;
+                            font-size: rem(11);
+                            padding: rem(3) rem(8);
+                        }
+                    }
+
+                    span,
+                    p {
+                        font-size: $element-border;
+                    }
+                }
+            }
+        
+        }
+    }
+}

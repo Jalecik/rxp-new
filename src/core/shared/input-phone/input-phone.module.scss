@@ -1,0 +1,47 @@
+
+
+
+@import "../../../assets/styles/abstracts/index.scss";
+
+.input {
+  border: rem(1.5) solid $input;
+  padding: rem(0);
+  align-items: center;
+  border-radius: $border-radius;
+  height: rem(56);
+  font-size: rem(16);
+  padding: rem(10) rem(12);
+  padding-top: rem(17) !important;
+  top: rem(3);
+  width: 100%;
+  &::placeholder {
+    font-size: rem(16);
+    font-family: 'IBM Plex Sans';
+    color: $input-text;
+    height: rem(56);
+  }
+}
+
+.input-float {
+  position: relative;
+  margin-bottom: 24px;
+  &__label {
+    position: absolute;
+    top: 0;
+    left: rem(12);
+    font-size: rem(16);
+    color: $input-text;
+    font-family: 'IBM Plex Sans';
+    color: $input-text;
+    transition: all 0.3s ease-out;
+    z-index: 999;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+}
+.input-float.focused .input-float__label,
+.input-float input:not(:placeholder-shown) ~ .input-float__label{
+  font-size: 12px;
+  top: 0%;
+  transform: translate(0%, 0%);
+}

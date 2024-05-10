@@ -1,0 +1,9 @@
+@import "../../../assets/styles/abstracts/index.scss";
+
+.subtitle {
+    font-family: 'Space Grotesk Bold';
+    line-height: rem(16);
+    color: $main;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,86 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.support {
+    @include breakpoint("768px", "min") {
+        margin-top: rem(75);
+    }
+    & div:first-child {
+        @include breakpoint("768px", "max") {
+            max-width: 100%;
+        }
+    }
+    &-card {
+        display: flex;
+        overflow: hidden;
+
+        padding: rem(50) auto;
+        height: rem(444);
+
+        &_inner {
+            margin: auto;
+            @include breakpoint("768px", "max") {
+                padding: rem(48) rem(12);
+            }
+            @include breakpoint("768px", "min") {
+                padding: rem(40) rem(40);
+            }
+            @include breakpoint("1024px", "min") {
+                padding: rem(40) rem(80);
+            }
+            p {
+                @include breakpoint("768px", "max") {
+                    margin: rem(24) auto rem(27) auto;
+                }
+                @include breakpoint("768px", "min") {
+                    margin: rem(30) auto rem(40s) auto;
+                }
+            }
+        }
+
+        @include breakpoint("768px", "max") {
+            border: none;
+            border-radius: rem(0);
+            background-image: url('../../../assets/images/support/bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        @include breakpoint("768px", "min") {
+            border: rem(1) solid $gray;
+            border-radius: $card-border;
+        }
+    }
+
+    &-links {
+        display: flex;
+        flex-direction: column;
+
+        a, div {
+            display: flex;
+            font-family: 'IBM Plex Sans Medium';
+            font-size: rem(18);
+            color: $blue;
+        }
+    }
+
+    &-right {
+        width: 100%;
+
+        &_video {
+            height: 428px;
+        }
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.support-right_video {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover;
+    border-top-right-radius: rem(12);
+    border-bottom-right-radius: rem(12);
+}

@@ -1,0 +1,67 @@
+@import "assets/styles/abstracts";
+
+.result {
+  &-list {
+    li {
+      padding: rem(0);
+    }
+    &_item {
+      transition: background-color 0.5s ease;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      display: flex;
+
+      // &:hover {
+      //   color: $light-gray;
+      // }
+      span {
+        color: $main;
+        font-size: rem(16);
+        font-family: 'IBM Plex Sans Bold';
+        @include breakpoint("768px", "max") {
+          line-height: rem(21);
+        }
+        @include breakpoint("768px", "min") {
+          line-height: rem(31);
+        }
+      }
+    }
+  }
+  li {
+    img {
+      margin-right: rem(16);
+    }
+    &:not(:last-child){
+      border-bottom: rem(1) solid $gray;
+    }
+    span {
+      @include breakpoint("768px", "max") {
+        padding: rem(24) rem(24) rem(24) rem(0);
+      }
+      @include breakpoint("768px", "min") {
+        padding: rem(24) rem(0);
+      }
+    }
+
+    img {
+      width: rem(24);
+      height: rem(24);
+      @include breakpoint("768px", "max") {
+        margin-right: rem(24);
+      }
+      @include breakpoint("768px", "min") {
+        padding: rem(0);
+      }
+    }
+    // a {
+    //   display: flex;
+    //   span {
+    //     color: $main;
+    //     font-size: rem(16);
+    //     font-family: 'IBM Plex Sans Bold';
+    //     margin-left: rem(16);
+    //   }
+    // }
+  }
+}

@@ -1,0 +1,7 @@
+@import "assets/styles/abstracts";
+
+.card {
+  background-color: $white;
+  border-radius: $border-radius;
+  border: rem(1) solid $gray;
+}

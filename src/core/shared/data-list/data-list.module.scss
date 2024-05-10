@@ -1,0 +1,14 @@
+@import "assets/styles/abstracts";
+
+.data-list {
+  ul {
+    li:not(:last-child) {
+      border-bottom: rem(1) solid $gray;
+      padding: rem(24) rem(0) !important;
+
+      p {
+        line-height: rem(23);
+      }
+    }
+  }
+}

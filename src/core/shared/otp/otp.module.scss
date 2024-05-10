@@ -1,0 +1,23 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.otp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(30);
+    &-input {
+        border-radius: 8px;
+        border: 1.5px solid $input;
+        font-size: rem(21);
+        padding: rem(22);
+        color: $main;
+        @include breakpoint("768px", "max") {
+            width: rem(40);
+            height: rem(40);
+        }
+        @include breakpoint("768px", "min") {
+            width: rem(60);
+            height: rem(60);
+        }
+  
+    }
+}

@@ -1,0 +1,113 @@
+@import '../../src/assets/styles/abstracts/index.scss';
+
+.fast-start {
+  &_header {
+    @include breakpoint("768px", "max") {
+      margin-top: rem(16);
+    }
+    @include breakpoint("768px", "min") {
+      margin-top: rem(24);
+    }
+    @include breakpoint("1024px", "min") {
+      margin-top: rem(24);
+  } 
+    span {
+      color: $dark-green;
+      font-size: rem(16);
+      margin-left: rem(8);
+    }
+  }
+
+  &_left {
+    position: relative;
+    // right: rem(28);
+    min-height: 90vh;
+    width: 100%;
+  }
+}
+
+.all-services {
+  span {
+    color: $blue;
+    font-family: "IBM Plex Sans Bold";
+    font-size: rem(16);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.feedback {
+  position: absolute;
+  bottom: rem(60);
+  p {
+    font-family: "IBM Plex Sans Bold";
+    font-size: rem(16);
+    margin-bottom: rem(16);
+  }
+  @include breakpoint("768px", "max") {
+    padding-left: rem(0);
+  }
+  @include breakpoint("1200px", "min") {
+    padding-left: rem(40);
+  }
+
+  ul {
+    li {
+      button {
+        background-color: $white;
+        border-radius: $border-radius;
+        border: 1.5px solid $main;
+        align-items: center;
+        span {
+          font-family: "IBM Plex Sans Bold";
+          font-size: 16px;
+        }
+        @include breakpoint("1200px", "min") {
+          width: rem(104);
+        }
+      }
+      &:first-child {
+        button {
+          margin-left: rem(0) !important;
+        }
+      }
+    }
+  }
+}
+.fast-right {
+  ul {
+    margin-top: 40px;
+  }
+  // @include breakpoint("768px", "max") {
+  //   margin-left: rem(40);
+  // }
+  // @include breakpoint("768px", "min") {
+  //   margin-left: rem(80);
+  // }
+  // @include breakpoint("1440px", "min") {
+  //   margin-left: rem(40);
+  // }
+}
+
+.steps {
+  // @include breakpoint("768px", "max") {
+  //   margin-left: rem(25);
+  // }
+  @include breakpoint("2600px", "min") {
+    position: relative;
+    left: rem(50);
+  }
+}
+.services-list {
+  li {
+    @include breakpoint("768px", "max") {
+      padding: rem(0)  !important;
+    }
+  }
+  // @include breakpoint("768px", "max") {
+  //   margin-left: rem(25);
+  // }
+  // @include breakpoint("1024px", "min") {
+  //   margin-left: rem(50);
+  // }
+}

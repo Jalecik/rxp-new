@@ -1,0 +1,113 @@
+@import 'src/assets/styles/abstracts/index.scss';
+
+.navbar {
+    height: rem(80);
+    background-color: white;
+    margin: auto;
+    display: block;
+    border-bottom: rem(1) solid $gray;
+
+    &-inner {
+        margin: rem(20) rem(0);
+        max-width: rem(1032);
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_card {
+        width: 100%;
+    }
+
+    &-mobile {
+        &_header {
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: rem(17) rem(12);
+            display: flex;
+        }
+
+        &_hamburger {
+            svg {
+                background-color: $light-gray;
+                border-radius: 50%;
+                padding: rem(8);
+                width: rem(40);
+                height: rem(40);
+            }
+        }
+
+        &_btns {
+            background-color: $white;
+            z-index: 999;
+            position: relative;
+            padding: rem(32) rem(8) rem(24) rem(8);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            @include breakpoint("768px", "max") {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            &.visible {
+                opacity: 1;
+            }
+
+            button {
+                width: 100%;
+
+                &:nth-child(1) {
+                    margin-bottom: rem(16);
+                }
+            }
+        }
+    }
+}
+
+.login-modal {
+    max-width: rem(480);
+    @include breakpoint("768px", "min") {
+        height: auto;
+    }
+    input {
+        max-width: rem(416);
+    }
+}
+
+.login-btns {
+    @include breakpoint("768px", "max") {
+       position: relative;
+       right: rem(60);
+    }
+    @include breakpoint("768px", "min") {
+        margin-right: rem(6);
+        right: rem(90);
+        position: relative;
+    }
+    @include breakpoint("1440px", "min") {
+        margin-right: rem(0);
+        right: rem(0);
+    }
+}
+.check-modal {
+    &__info {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        height: rem(48);
+        bottom: rem(30);
+        span {
+            color: $blue;
+            margin-left: rem(12);
+        }
+    }
+    &__btn {
+        margin: auto;
+        display: block;
+        border: none;
+        box-shadow: none;
+        // width: rem(116);
+        width: 100%;
+        height: rem(48);
+    }
+}

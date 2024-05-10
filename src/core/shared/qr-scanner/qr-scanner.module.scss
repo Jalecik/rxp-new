@@ -1,0 +1,10 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.qr-scanner {
+  background-color: $text-color;
+  border-radius: $border-radius;
+  @include breakpoint('768px', 'min') {
+    width: rem(416);
+    height: rem(280);
+  }
+}

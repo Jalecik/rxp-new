@@ -1,0 +1,23 @@
+@import '../../src/assets/styles/abstracts/index.scss';
+
+
+.support {
+    .common-cards {
+        padding: rem(24);
+    }
+
+    &-list {
+        li {
+            @include breakpoint("768px", "max") {
+                padding: rem(0) rem(0);
+            }
+            @include breakpoint("768px", "min") {
+                padding: rem(0) rem(13);
+            }
+
+            h6 {
+                margin: rem(12) auto;
+            }
+        }
+    }
+}

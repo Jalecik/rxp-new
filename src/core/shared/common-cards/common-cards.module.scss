@@ -1,0 +1,56 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.common-cards {
+    border: rem(1) solid $gray;
+    border-radius: $card-border;
+    padding: rem(20) !important;
+    height: rem(204);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        -webkit-box-shadow: -6px 2px 34px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: -6px 2px 34px 0px rgba(34, 60, 80, 0.2);
+         box-shadow: -6px 2px 34px 0px rgba(34, 60, 80, 0.2);
+    }
+
+    &_icon {
+        align-items: center;
+        img {
+            background-color: $footer-bg;
+            width: rem(56);
+            height: rem(56);
+            padding: rem(12);
+            border-radius: 50%;
+        }
+    }
+
+    .green {
+        background-color: $main-green;
+    }
+
+    .blue {
+        background-color: $badge;
+    }
+
+    &_badge {
+        border-radius: rem(12);
+        height: rem(24);
+        padding-left: rem(13);
+        padding-right: rem(13);
+        margin-bottom: rem(30);
+
+        span {
+            color: $white;
+            font-size: rem(12);
+            font-family: 'IBM Plex Sans Bold';
+        }
+    }
+
+    h6 {
+        color: $main;
+        font-size: rem(16);
+        font-family: 'IBM Plex Sans Medium';
+        margin-top: rem(12);
+        font-weight: 500;
+    }
+}

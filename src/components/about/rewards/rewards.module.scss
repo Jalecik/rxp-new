@@ -1,0 +1,69 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.reward {
+    @include breakpoint("768px", "max") {
+        margin-top: rem(15);
+    }
+
+    h4 {
+        font-size: rem(16);
+        font-family: 'IBM Plex Sans Bold';
+        line-height: rem(18);
+        margin: rem(12) rem(0);
+    }
+
+    ul {
+        li {
+            @include breakpoint("768px", "max") {
+                margin-bottom: rem(24);
+            }
+            @include breakpoint("1200px", "min") {
+                margin-right: rem(24);
+                width: rem(240);
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @include breakpoint("768px", "min") {
+        margin: rem(80) rem(0) rem(100) rem(0);
+    }
+
+    &-list {
+        // max-width: 100%;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+
+        @include breakpoint("1024px", "min") {
+            width: rem(1032);
+        }
+
+        li {
+            width: 100%;
+            @include breakpoint("768px", "max") {
+             margin-bottom: rem(24);
+            }
+            @include breakpoint("768px", "min") {
+                width: calc((1032px - 24px * 2) / 3);
+                height: auto;
+            }
+            .list-item:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        &__img {
+            background-color: $light-gray;
+            padding: rem(32) rem(16);
+            border-radius: $card-border;
+            img {
+                width: 100%;
+                height: rem(47);
+            }
+        }
+    }
+}

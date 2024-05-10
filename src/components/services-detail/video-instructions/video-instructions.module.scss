@@ -1,0 +1,22 @@
+@import '../../../assets/styles/abstracts/index.scss';
+
+.video-details {
+     padding: rem(0) rem(0);
+    &_inner {
+        border: rem(1) solid $light-gray;
+        border-radius: $card-border;
+        padding: rem(15);
+
+        h6 {
+            font-size: rem(16);
+            margin: rem(16) 0;
+        }
+
+        span {
+            color: $blue;
+            font-family: 'IBM Plex Sans Regular';
+            margin-left: rem(8);
+        }
+    }
+
+}
